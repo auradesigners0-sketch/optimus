@@ -502,7 +502,7 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    justify-content: flex-end;
+    justify-content: flex;
 }
 
 .menu-panel ul li a::before {
@@ -696,7 +696,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
     background-image: 
-        radial-gradient(circle at 10px 10px, rgba(20, 49, 9, 0.03) 1px, transparent 0);
+    radial-gradient(circle at 10px 10px, rgba(20, 49, 9, 0.03) 1px, transparent 0);
     background-size: 20px 20px;
     pointer-events: none;
     z-index: 0;
