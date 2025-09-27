@@ -78,6 +78,7 @@ body::-webkit-scrollbar-thumb {
     height: 50px;
     padding-left: 2rem;
     transition: transform 0.3s ease;
+    margin-top: .6rem;
 }
 
 .logo:hover {
@@ -2158,7 +2159,7 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 1rem;
-        padding-top: 10px;
+        margin-top: 12px;
     }
     
     .navbar ul li a {
@@ -2217,7 +2218,7 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 0.5rem;
-        padding-top: 10px;
+        margin-top: 12px;
     }
     
     .navbar ul li a {
@@ -2305,7 +2306,7 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 0.5rem;
-        padding-top: 10px;
+        margin-top: 12px;
     }
     
     .icons i {
@@ -2535,7 +2536,7 @@ section.visible {
     .logo {
         height: 65px;
         padding-left: 0.3rem;
-        padding-top: 8px;
+        margin-top: 10px;
     }
     
     .icons {
@@ -2716,7 +2717,7 @@ section.visible {
     .logo {
         height: 65px;
         padding-left: 0.2rem;
-        padding-top: 7px;
+        margin-top: 10px;
     }
     
     .icons {
