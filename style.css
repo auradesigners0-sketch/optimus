@@ -2159,7 +2159,8 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 1rem;
-        margin-top: 12px;
+        padding-top: 8px;
+        padding-bottom: 5px;
     }
     
     .navbar ul li a {
@@ -2218,7 +2219,8 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 0.5rem;
-        margin-top: 12px;
+        padding-top: 8px;
+        padding-bottom: 5px;
     }
     
     .navbar ul li a {
@@ -2306,7 +2308,8 @@ section.visible {
     .logo {
         height: 70px;
         padding-left: 0.5rem;
-        margin-top: 12px;
+        padding-top: 8px;
+        padding-bottom: 5px;
     }
     
     .icons i {
@@ -2536,7 +2539,8 @@ section.visible {
     .logo {
         height: 65px;
         padding-left: 0.3rem;
-        margin-top: 10px;
+        padding-top: 6px;
+        padding-bottom: 3px;
     }
     
     .icons {
@@ -2717,7 +2721,8 @@ section.visible {
     .logo {
         height: 65px;
         padding-left: 0.2rem;
-        margin-top: 10px;
+        padding-top: 6px;
+        padding-bottom: 3px;
     }
     
     .icons {
