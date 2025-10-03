@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimus Kingdom - Sustainable Energy Solutions</title>
+    <meta name="description" content="Optimus Kingdom provides innovative solar system solutions and power system integration for utilities, enterprises, and telecom industries.">
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader-logo">
+            <img src="image/optimus-logo.png" alt="Optimus Kingdom Logo">
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div>
+            <img class="logo" src="image/optimus-logo.png" alt="Optimus Kingdom Logo">
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel"></i>
+            <a href="about us/about-us.html"><i class="fas fa-info-circle" id="about-btn" title="About Us"></i></a>
+            <i class="fas fa-phone" id="contact-btn" aria-label="Open contact information" aria-expanded="false" aria-controls="contact-panel"></i>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Panel -->
+<div class="slide-panel menu-panel" id="menu-panel" role="navigation" aria-label="Mobile navigation">
+    <div class="panel-header">
+        <h2>Menu</h2>
+        <p>Navigate our website</p>
+    </div>
+    <div class="close-panel" id="close-menu">
+        <i class="fas fa-times"></i>
+    </div>
+    <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about us/about-us.html"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="panel-footer">
+        <p>&copy; 2025 Optimus Kingdom</p>
+    </div>
+</div>
+
+    <!-- Contact Panel -->
+    <div class="slide-panel contact-panel" id="contact-panel" role="dialog" aria-label="Contact information">
+        <div class="close-panel" id="close-contact">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="info">
+            <i class="fas fa-phone"></i>
+            <h3>phone number</h3>
+            <p>+255 677 146 646</p>
+        </div>
+
+        <div class="info">
+            <i class="fas fa-envelope"></i>
+            <h3>email address</h3>
+            <p>Info@optimuskingdom.com</p>
+        </div>
+        
+        <div class="info">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>office location</h3>
+            <p>Acacia Estates Ltd, kinondoni Road <br>
+            Dar es salaam, Tanzania</p>
+        </div>
+
+        <div class="share">
+            <h3>follow us</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com/optimuskingdom" class="fab fa-facebook" aria-label="Facebook"></a>
+                <a href="https://twitter.com/optimuskingdom" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="https://instagram.com/optimuskingdom" class="fab fa-instagram" aria-label="Instagram"></a>
+                <a href="https://linkedin.com/company/optimuskingdom" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Slider Section -->
+    <section class="home" id="home">
+        <div class="home-slider">
+            <div class="slides-container">
+                <section class="slide active" style="background: url('image/homepage1.png') no-repeat center center/cover;">
+                    <div class="content">
+                        <h2>Powering Progress with Sustainable Energy Solutions</h2>
+                        <p>Transforming the energy landscape with innovative solar and 
+                            power system solutions for utilities, enterprises, and telecom industries.
+                        </p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+
+                <section class="slide" style="background: url('image/homepage2.png') no-repeat center center/cover;">
+                    <div class="content">
+                        <h2>Engineering Resilient Energy Systems</h2>
+                        <p>Delivering end-to-end power solutions – from grid optimization to microgrids –
+                            ensuring reliability, efficiency, and future-proof operations.
+                        </p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+
+                <section class="slide" style="background: url('image/homepage3.png') no-repeat center center/cover;">
+                    <div class="content">
+                        <h2>Partnering for a Cleaner Tomorrow</h2>
+                        <p>Join industry leaders in reducing carbon footprints through scalable renewable 
+                            energy projects that drive growth and sustainability.
+                        </p>
+                        <a href="#about" class="btn">Get Started</a>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Navigation Buttons -->
+            <div class="slider-nav">
+                <div class="prev-btn" id="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="next-btn" id="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="about">
+        <div class="content-wrapper">
+            <div class="image-column">
+                <div class="single-image-container">
+                    <img src="image/image3.png" alt="Engineer inspecting solar panels" class="single-image">
+                </div>
+            </div>
+
+            <div class="text-column">
+                <h2>Why Choose Us?</h2>
+                <p class="intro-text">
+                    At Optimus Kingdom, we don't just provide services—we build lasting partnerships
+                    based on trust, reliability, and exceptional results. 
+                </p>
+
+                <ul class="features-list">
+                    <li>Proven Energy Expertise</li>
+                    <li>Tailored Solutions</li>
+                    <li>Reliable Project Delivery</li>
+                    <li>Quality & Safety First</li>
+                    <li>Purpose-Driven Innovation</li>
+                </ul>
+
+                <div class="buttons-container">
+                    <a href="#contact" class="btn primary-btn">Contact Us</a>
+                    <a href="#services" class="btn secondary-btn">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-h2">Who we are?</h2>
+                    <p>Founded with a commitment to transforming the energy 
+                      landscape, Optimus is a forward-thinking contractor 
+                      delivering solar system solutions and power system 
+                      integration across utilities, enterprises, and the 
+                      telecom industry. <br>
+
+                      With operations built on innovation, reliability, and 
+                      sustainability, Optimus has established itself as a trusted
+                      partner for businesses seeking clean, efficient, and 
+                      future-proof energy solutions. <br> 
+
+                      At Optimus, we understand that energy is more than just 
+                      power — it's the foundation of economic growth, industrial
+                      development, and community transformation</p>
+                    <a href="about.html" class="learn-more-btn">Learn More About Us</a>
+                </div>
+                
+                <div class="projects-showcase">
+                    <div class="projects-grid">
+                        <div class="project-item">
+                            <img src="image/image2.png" alt="Project 1">
+                        </div>
+                        <div class="project-item">
+                            <img src="image/image7.png" alt="Project 2">
+                        </div>
+                        <div class="project-item">
+                            <img src="image/image4.png" alt="Project 3">
+                        </div>
+                        <div class="project-item">
+                            <img src="image/patnership.png" alt="Project 4">
+                        </div>
+                    </div>
+                    
+                    <h3 class="projects-title">Our Latest Projects</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+                
+                <div class="stat-box">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Projects Accomplished</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">Our Services</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/solar-system.png" alt="Solar Systems">
+                <h3>Comprehensive Solar Systems</h3>
+                <p>End-to-end solar PV solutions from design and supply to installation and maintenance for residential,
+                 commercial, and utility-scale projects.</p>
+            </div>
+            <div class="box">
+                <img src="image/hybrid.png" alt="Hybrid Power">
+                <h3>Hybrid Power Solutions</h3>
+                <p>Innovative integration of solar with diesel generators and battery storage to ensure reliable,
+                 uninterrupted power for critical operations.</p>
+            </div>
+            <div class="box">
+                <img src="image/telecom.png" alt="Telecom Power">
+                <h3>Telecom Power Systems</h3>
+                <p>Specialized power solutions for telecommunication towers and infrastructure,
+                     ensuring connectivity even in remote locations.</p>
+            </div>
+            <div class="box">
+                <img src="image/solar-farms.png" alt="Solar Farms">
+                <h3>Large-Scale Solar Farms</h3>
+                <p>Development and implementation of utility-scale solar farms that 
+                    contribute significantly to national renewable energy goals.</p>
+            </div>
+            <div class="box">
+                <img src="image/electrical.png" alt="Electrical Infrastructure">
+                <h3>Electrical Infrastructure</h3>
+                <p>Complete electrical installation services for domestic, commercial,
+                 and industrial clients, including power line installation and
+                  distribution systems.</p>
+            </div>
+            <div class="box">
+                <img src="image/energy-monitoring.png" alt="Energy Management">
+                <h3>Energy Management</h3>
+                <p>Advanced monitoring, optimization, and maintenance services 
+                to maximize energy efficiency and system performance throughout the lifecycle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries We Serve Section -->
+    <section class="industries" id="projects">
+        <h2>Industries We Serve</h2>
+        <div class="industries-ctn">   
+            <img src="image/powerline.png" alt="Power Line">
+            <div class="paragraph">
+                <h3>Utility Sector</h3>
+                <p>Solar farms, mini-grids, electrification projects</p>
+            </div>
+            <div class="paragraph">
+                <h3>Business Enterprises</h3>
+                <p> Manufacturing, corporate offices, data centers</p>
+            </div>
+            <div class="paragraph">
+                <h3>Telecommunications</h3>
+                <p>Tower hybrid solutions, backup systems</p>
+            </div>
+            <div class="paragraph">
+                <h3>Public Institutions</h3>
+                <p>Schools, hospitals, government facilities</p>
+            </div>
+            <div class="paragraph">
+                <h3>Residential Communities</h3>
+                <p>Housing developments, estates, households</p>
+            </div>      
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="heading">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Acacia Estates Ltd, kinondoni Road<br>
+                            Dar es salaam, Tanzania</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+255 677 146 646</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>Info@optimuskingdom.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 9:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://facebook.com/optimuskingdom" class="fab fa-facebook" aria-label="Facebook"></a>
+                            <a href="https://twitter.com/optimuskingdom" class="fab fa-twitter" aria-label="Twitter"></a>
+                            <a href="https://instagram.com/optimuskingdom" class="fab fa-instagram" aria-label="Instagram"></a>
+                            <a href="https://linkedin.com/company/optimuskingdom" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-buttons">
+                    <h3>Contact Us Directly</h3>
+                    <p>Reach out to us through any of these direct contact methods:</p>
+                    
+                    <div class="buttons-container">
+                        <a href="mailto:Info@optimuskingdom.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Us</span>
+                        </a>
+                        
+                        <a href="tel:+255677146646" class="contact-btn call-btn">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Us</span>
+                        </a>
+                        
+                        <a href="https://wa.me/255677146646" class="contact-btn whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp Us</span>
+                        </a>
+                        
+                        <a href="#" class="contact-btn" id="open-contact-popup" style="background-color: #28a745;">
+                            <i class="fas fa-envelope"></i>
+                            <span>Send Message</span>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-note">
+                        <p>Our team is available during working hours to assist you with any inquiries or project discussions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/optimus-logo.png" alt="Optimus Kingdom Logo">
+                    <p>Powering a sustainable future through innovative energy solutions.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Acacia Estates Ltd, kinondoni Road, Dar es salaam, Tanzania</p>
+                    <p><i class="fas fa-phone"></i> +255 677 146 646</p>
+                    <p><i class="fas fa-envelope"></i> Info@optimuskingdom.com</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/optimuskingdom" class="fab fa-facebook" aria-label="Facebook"></a>
+                        <a href="https://twitter.com/optimuskingdom" class="fab fa-twitter" aria-label="Twitter"></a>
+                        <a href="https://instagram.com/optimuskingdom" class="fab fa-instagram" aria-label="Instagram"></a>
+                        <a href="https://linkedin.com/company/optimuskingdom" class="fab fa-linkedin" aria-label="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Optimus Kingdom. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Popup -->
+    <div class="contact-popup" id="contact-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h2>Contact Us</h2>
+                <button class="close-popup" id="close-popup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="popup-body">
+                <form id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="solar-systems">Comprehensive Solar Systems</option>
+                            <option value="hybrid-power">Hybrid Power Solutions</option>
+                            <option value="telecom-power">Telecom Power Systems</option>
+                            <option value="solar-farms">Large-Scale Solar Farms</option>
+                            <option value="electrical">Electrical Infrastructure</option>
+                            <option value="energy-management">Energy Management</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="popup-footer">
+                <p>Or reach out to us directly:</p>
+                <div class="contact-methods">
+                    <a href="tel:+255677146646">
+                        <i class="fas fa-phone"></i> Call Us
+                    </a>
+                    <a href="mailto:Info@optimuskingdom.com">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                    <a href="https://wa.me/255677146646" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
