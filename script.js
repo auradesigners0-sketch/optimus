@@ -205,6 +205,11 @@ if (contactForm) {
             service: formData.get('service'),
             message: formData.get('message')
         };
+        // Add this before sending
+        if (!formData.get('first-name') || !formData.get('last-name') || !formData.get('email') || !formData.get('service') || !formData.get('message')) {
+            alert('Please fill in all required fields');
+            return;
+}
         
         // Send email using EmailJS
         emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params)
