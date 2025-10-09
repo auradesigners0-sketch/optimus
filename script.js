@@ -1,3 +1,7 @@
+// Initialize EmailJS with your public key
+    (function() {
+        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+    })
 // Home Slider Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.slide');
@@ -6,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-btn');
     let currentSlide = 0;
     let autoSlideInterval;
+
 
     // Function to show a specific slide
     function showSlide(index) {
@@ -185,28 +190,32 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Handle form submission
+    // Handle form submission with EmailJS
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
             // Get form data
             const formData = new FormData(contactForm);
-            const formValues = {};
+            const params = {
+                first_name: formData.get('first-name'),
+                last_name: formData.get('last-name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                service: formData.get('service'),
+                message: formData.get('message')
+            };
             
-            for (let [key, value] of formData.entries()) {
-                formValues[key] = value;
-            }
-            
-            // Here you would typically send the form data to a server
-            // For this example, we'll just show a success message
-            alert('Thank you for your message! We will get back to you soon.');
-            
-            // Reset the form
-            contactForm.reset();
-            
-            // Close the popup
-            closeContactPopup();
+            // Send email using EmailJS
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params)
+                .then(() => {
+                    alert('Your message has been sent successfully!');
+                    contactForm.reset();
+                    closeContactPopup();
+                })
+                .catch(() => {
+                    alert('There was an issue sending your message. Please try again later.');
+                });
         });
     }
 
