@@ -1,6 +1,6 @@
 // Initialize EmailJS with your public key
     (function() {
-        emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+        emailjs.init("g9jA4p82jbJdaQRfk"); // Replace with your actual public key
     })
 // Home Slider Functionality
 document.addEventListener('DOMContentLoaded', function() {
@@ -190,34 +190,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Handle form submission with EmailJS
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const params = {
-                first_name: formData.get('first-name'),
-                last_name: formData.get('last-name'),
-                email: formData.get('email'),
-                phone: formData.get('phone'),
-                service: formData.get('service'),
-                message: formData.get('message')
-            };
-            
-            // Send email using EmailJS
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params)
-                .then(() => {
-                    alert('Your message has been sent successfully!');
-                    contactForm.reset();
-                    closeContactPopup();
-                })
-                .catch(() => {
-                    alert('There was an issue sending your message. Please try again later.');
-                });
-        });
-    }
+   // Handle form submission with EmailJS
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(contactForm);
+        const params = {
+            first_name: formData.get('first-name'),
+            last_name: formData.get('last-name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            service: formData.get('service'),
+            message: formData.get('message')
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', params)
+            .then(() => {
+                alert('Your message has been sent successfully!');
+                contactForm.reset();
+                closeContactPopup();
+            })
+            .catch((error) => {
+                console.error('Failed to send email:', error);
+                alert('There was an issue sending your message. Please try again later.');
+            });
+    });
+}
 
     // Counter Animation for Stats Section
     const counters = document.querySelectorAll('.stat-number');
